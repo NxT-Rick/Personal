@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="card">
+
+        
+
+        <h1>Will you be my Valentine? 💘</h1>
+
+        <p class="message">
+            From all the moments we spent, every single second has been a loving memory.
+            I only wish for more memories <br> With you <br>  Vidhi. <br> My Viscountess. 💘
+        </p>
+
+        <!-- IMAGE AREA -->
+        <div class="image-box">
+            <img src="diwali1.jpeg" alt="Our photo">
+        </div>
+
+        <p class="small-text">
+            For once now with the winds I sailed,<br>
+            Only not alone this time.<br>
+            Two sailors lost, we take on our ships <br>
+            On a voyage together against the tide.<br>
+
+        </p>
+
+        <div class="buttons">
+        <button class="yes" id="yesBtn" onclick="goToYesPage()">Yes 💕</button>
+        <button class="no" id="noBtn">No</button>
+        </div>
+
+        <!-- SECOND IMAGE BELOW BUTTONS -->
+        <div class="image-box bottom-image">
+        <img src="photo1.jpeg" alt="Bottom image">
+</div>
+
+
+    </div>
+
+    <script>
+        let scale = 1;
+        const yesBtn = document.getElementById("yesBtn");
+        const noBtn = document.getElementById("noBtn");
+
+        function goToYesPage() {
+    alert("I knew it 💕");
+    window.location.href = "yes.html";
+}
+
+
+        noBtn.addEventListener("click", () => {
+            scale += 0.2;
+            yesBtn.style.transform = `scale(${scale})`;
+        });
+    </script>
+
+    
+
+</body>
+</html>
+
